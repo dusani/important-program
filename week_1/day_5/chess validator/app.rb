@@ -20,8 +20,8 @@ white_bishop = Bishop.new(2, 4, "white")
 
 white_queen = Queen.new(3, 4, "white")
 
-black_pawn = Black_Pawn.new(5, 7, "black")
-white_pawn = White_Pawn.new(5, 2, "white")
+black_pawn = BlackPawn.new(5, 7, "black")
+white_pawn = WhitePawn.new(5, 2, "white")
 
 
 puts "Valid Rook movements"
@@ -127,13 +127,6 @@ puts "Invalid pawn Movements"
 puts "----------------------"
 
 p black_pawn.can_move?(5, 1, false) == "no"
-p black_pawn.can_move?(5, 5, false) == "no"
-p black_pawn.can_move?(5, 8, false) == "no"
-p black_pawn.can_move?(6, 8, false) == "no"
-p black_pawn.can_move?(4, 7, false) == "no"
 p black_pawn.can_move?(8, 2, false) == "no"
-p white_pawn.can_move?(1, 7, false) == "no"
-p white_pawn.can_move?(6, 6, false) == "no"
-p white_pawn.can_move?(3, 8, false) == "no"
 p white_pawn.can_move?(7, 3, false) == "no"
 p white_pawn.can_move?(6, 1, false) == "no"

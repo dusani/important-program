@@ -1,4 +1,4 @@
-class White_Pawn
+class WhitePawn
   def initialize(x, y, color)
     @x = x
     @y = y
@@ -24,7 +24,7 @@ class White_Pawn
   end
 end
 
-class Black_Pawn
+class BlackPawn
   def initialize(x, y, color)
     @x = x
     @y = y
