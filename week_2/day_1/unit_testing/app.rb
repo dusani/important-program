@@ -1,6 +1,6 @@
 # app.rb
 
-require_relative("string_calculator.rb")
+require_relative("lib/string_calculator.rb")
 
 
 the_calculator = StringCalculator.new
@@ -12,3 +12,6 @@ p the_calculator.add("6") == 6
 p the_calculator.add("3") == 3
 
 p the_calculator.add("") == 0
+
+p the_calculator.add == 0
+
