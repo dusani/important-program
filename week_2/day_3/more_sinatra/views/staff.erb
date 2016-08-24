@@ -1,0 +1,19 @@
+<!-- view/company.erb -->
+
+<link rel="stylesheet" type="text/css" href="/styles.css">
+
+<h1> Our Staffs</h1>
+
+<img src="/staff.gif">
+
+<h2> This is a list of our staffs: </h2>
+
+<ul>
+	
+	<% @staffs.each do |staff| %>
+		<li>
+			Staff Name: <%= staff %>
+		</li>
+	<% end %>
+
+</ul>
