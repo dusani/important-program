@@ -18,11 +18,11 @@ post "/calculate" do
 
 	if params[:operation] == "add"
 		result = first + second
-	elsif params[:operation] == "add"
+	elsif params[:operation] == "subtract"
 		result = first - second
-	elsif params[:operation] == "add"
+	elsif params[:operation] == "multiply"
 		result = first * second
-	elsif params[:operation] == "add"
+	elsif params[:operation] == "divide"
 		result = first / second.to_f
 	end
 		
