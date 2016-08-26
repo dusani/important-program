@@ -1,0 +1,16 @@
+<h1> Hello Welcome to my Blog</h1>
+
+<ul style="list-style-type:none">
+	<% @show_articles.each_with_index do |article, index| %>
+
+		<li>
+			<h4> <a href="/post_details/<%=index%>"> <%= article.title %> </a> </h4>
+			<!-- <p> <%= article.date %>	</p> -->
+		</li>
+
+
+	<% end %> <br>
+		
+		<h4><a href="/create_post" > Create new post </h4>
+
+</ul>
