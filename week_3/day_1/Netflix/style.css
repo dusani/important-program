@@ -1,0 +1,84 @@
+@font-face{
+	font-family: ProximaNovaReg;
+	src: url(fonts/ProximaNova-Reg.otf);
+}
+@font-face{
+	font-family: ProximaNovBold;
+	src: url(fonts/ProximaNova-Sbold.otf);
+}
+@font-face{
+	font-family: ProximaNovLight;
+	src: url(fonts/ProximaNova-Light.otf);
+}
+.img1{
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 20%;
+}
+
+#button1{
+	font-size: 15px;
+	color: #fff;
+	background-color: #e50914;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	height: 7%;
+	width: 11%;
+	border: 0px
+}
+
+.img2{
+	height: 15%;
+	width: 15%;
+	position: absolute;
+	top: 1%;
+	left: 3%;
+}
+
+.watch{
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 225px;
+	left: 250px;
+	background: rgba(0, 0, 0, 0.7);
+	padding-top: 15px;
+	padding-bottom: 90px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.watchtext{
+	font-family: ProximaNovBold;
+	font-size: 60px;
+	color: white;
+	padding: 10px;
+	margin: 0px;
+}
+
+#button2{
+	font-family: ProximaNovLight;
+	font-size: 20px;
+	border: 0px;
+	position:absolute;
+	background: #469df6;
+	color: white;
+	margin-left: 225px;
+	width:220px;
+	height: 50px;
+}
+
+.movie_img{
+	height: 280px;
+    width: auto;
+    display: inline;
+    padding: 25px;
+}
+
+#text2{
+	font-family: ProximanovaReg;
+	font-size: 30px;
+	padding-left: 25px
+}
