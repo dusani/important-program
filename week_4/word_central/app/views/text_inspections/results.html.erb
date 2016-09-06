@@ -1,0 +1,15 @@
+<h1>Word Central</h1>
+
+<h2>Text Submitted</h2>
+
+<p><%= @text %></p>
+
+<p>Text Word Count: <%= @word_count %></p>
+
+<p>Estimated time to read this text: <%= @read_time %> sec(s)</p>
+
+<p>Word Frequencies: <%= @counts.each do |key, value|
+			puts "#{key}": "#{value}"
+		end %></p>
+
+<h6><a href="/">Click here</a> to return to the homepage</h6>
