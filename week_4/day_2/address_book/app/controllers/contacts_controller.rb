@@ -20,4 +20,9 @@ class ContactsController < ApplicationController
 
     	redirect_to "/contacts"
   	end
+
+  	def detail
+  		@contact_detail = Contact.find_by(id: params[:id])
+  		render "detail"
+  	end
 end
