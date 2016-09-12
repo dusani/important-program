@@ -1,1 +1,27 @@
-<h3>A place to find concerts whenever you want.</h3>
+<h3>The best Concert Finder ever.</h3>
+
+<div>
+<h4>Today's Concerts</h4>
+	<ul style="list-style: none"> 
+		<% @current_concerts.each do |concert| %>
+			<li> 
+				<strong><%= link_to concert.name, "concerts/#{concert.id}" %></strong>
+			</li>
+
+			<li>
+				<strong>Details:</strong> <%= concert.description %>
+			</li>
+			<br>
+		
+		<% end %> 
+	</ul>
+</div>
+
+<div>
+	<h4>This Month's Concerts</h4>
+		<ul style="list-style: none">
+			<% @month_concerts.each do |concert| %>
+				<li><strong><%= link_to concert.name, "concerts/#{concert.id}" %></strong> : <%= concert.date %></li>
+			<% end %>
+		</ul>
+</div>
