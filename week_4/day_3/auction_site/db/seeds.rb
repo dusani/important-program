@@ -7,9 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user1 = User.create(name: "Jon Snow", email: "jon@snow.com")
 user2 = User.create(name: "Anya Stark", email: "anya@stark.com")
-user3 = User.create(name: "Sharon Williams", email: "sharon@williams.com")
+user3 = User.create(name: "Sharon Williams", email: 
+					"sharon@williams.com")
 user4 = User.create(name: "Tony Luke", email: "tony@luke.com")
 
 [user1, user2, user3, user4].each do |user|
 	5.times do |i|
-		user.products << Product.new(title: "Product #{i}", description: "Description", deadline: )
+		user.products << Product.new(title: "Product #{i}", description: "Description", deadline: i.days.from_now)

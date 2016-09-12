@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get "/users/new", to: "users#new"
   get "/users/:id", to: "users#show"
 
-  get "users/:user_id/products/new", to: "products#new"
+  get "/users/:user_id/products/new", to: "products#new"
+  post "/users/:user_id/products", to: "products#create", as: :user_products
+  get "/users/:user_id/products", to: "products#userproducts"
 
 end
