@@ -22,6 +22,7 @@ class ConcertsController < ApplicationController
 
 	def show
 		@concert = Concert.find(params[:id])
+		@comments_array = @concert.comments
 	end
 
 	private
