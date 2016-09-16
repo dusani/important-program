@@ -29,8 +29,20 @@ $(document).ready(function (){
 		$(".title").html(firstSong.name);
 		$(".author").html(firstSong.artists[0].name);
 		document.getElementById("js-album-image").src = (firstSong.album.images[0].url);
+		document.getElementById("js-play-song").src = (firstSong.preview_url);
 
 	};
+
+	$(".btn-play").on("click", function(){
+		$(".btn-play").toggleClass("playing");
+			if ( $(".btn-play").hasClass("playing") ){
+				$(".js-player").trigger('play');
+			}
+			else{
+				$(".js-player").trigger('pause');
+			}
+
+	});
 
 	
 	function handleError (error) {
