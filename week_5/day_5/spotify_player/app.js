@@ -44,7 +44,18 @@ $(document).ready(function (){
 
 	});
 
-	
+	function printTime () {
+	  var current = $('.js-player').prop('currentTime');
+	  console.log('Current time: ' + current);
+		$("#progress_bar").attr("value", current);
+
+		if (current >= 30){
+			$(".btn-play").toggleClass(".active")
+		};
+	};
+
+	$('.js-player').on('timeupdate', printTime);
+
 	function handleError (error) {
 		console.log("Error!");
 		console.log(error.responseText);
