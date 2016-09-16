@@ -50,11 +50,12 @@ $(document).ready(function (){
 		$("#progress_bar").attr("value", current);
 
 		if (current >= 30){
-			$(".btn-play").toggleClass(".active")
+			$(".btn-play").removeClass("playing")
 		};
-	};
+	}
 
 	$('.js-player').on('timeupdate', printTime);
+
 
 	function handleError (error) {
 		console.log("Error!");
