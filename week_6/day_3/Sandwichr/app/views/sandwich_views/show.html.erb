@@ -1,0 +1,44 @@
+<h1>Sandwich Details:</h1>
+<br>
+
+<h3>Name:</h3><%= @sandwich.name %>
+<br>
+<h3>Bread Type: </h3><%= @sandwich.bread_type %>
+<br>
+<h3> Total Calories: </h3><%= @sandwich.total_calories %>
+<br>
+<h3> Ingredients:</h3>
+
+<div class="js-ing-list">
+<% @ingredients.each do |ingredient| %>
+ 	<li>
+ 	<%= ingredient.name %>
+ 	</li>
+ <% end %> 
+ </div>
+
+
+<h2> Add Ingredient </h2>
+	<% @all_ingredients.each do |ingredient| %>
+	
+	<div class = "btn add_ingredient">
+		<button class= "js-btn-add-ing" 
+		data-adding= "<%=ingredient.id%>"
+		data-sandwichid= "<%=@sandwich.id%>"
+		> 
+
+			<li><%= ingredient.name %></li>
+
+		</button>
+	</div>
+
+	<ul class="js-ingredient-list"></ul>
+	<form>
+	
+	</form>
+	
+
+	
+	<% end %>
+
+ <%= link_to "Back", sandwiches_path %>
